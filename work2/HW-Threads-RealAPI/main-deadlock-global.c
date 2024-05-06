@@ -29,3 +29,16 @@ int main(int argc, char *argv[]) {
     Pthread_join(p2, NULL);
     return 0;
 }
+
+
+
+//问题5：现在在 main-deadlock-global.c 上运行 helgrind。检查代码；它有与
+//main-deadlock.c 相同的问题吗？ helgrind 应该报告同样的错误吗？对于像 helgrind 
+//这样的工具，这告诉您什么？
+
+
+//答：不存在和main-deadlock.c相同的问题。但是helgrind报告了相同的错误。helgrind报告有问题
+//不一定有问题，而是可能存在问题。
+
+
+
